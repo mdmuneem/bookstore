@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/WebBook/.vs/WebBook
+/WebBook/WebBook/bin/Debug/netcoreapp3.1
+/WebBook/WebBook/obj

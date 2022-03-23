@@ -1,0 +1,66 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+<head>
+
+</head>
+<body>
+    <h1>welcome to home page</h1>
+    <h2>@DateTime.Now</h2>
+    <h3>@DateTime.Now.ToString("dd-M-yy")</h3>
+    <h2>Sum=@(3 + 5)</h2>
+    <h1>Multi line razor syntax</h1>
+    @{ 
+        int a = 10;
+        int b = 20;
+        int c = a + b;
+        
+    }
+    <h2>Sum of a b is @c</h2>
+
+    @{
+        int x = 1;
+        int y = 0;
+
+      }
+    <h2>Ternary operator - @(x==10?y=10:y=5)</h2>
+    <h3>y=@y</h3>
+
+
+    @{ 
+        int s = 0;
+    }
+    @switch(s)
+    {
+        case 1: <h2>s=1</h2>
+            break;
+        case 2: <h2>s=2</h2>
+            break;
+        case 3: <h2>s=3</h2>
+            break;
+        default:
+                <h2>s=0</h2>
+            break;
+    }
+
+    @for(int i=0;i<10;i++)
+    {
+      <h1>Welcome to book store application @i</h1>
+    }
+
+    @{
+        var list = new List<int>() { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
+      }
+    @foreach(var item in list)
+    {
+        <h3>@item</h3>
+    }
+    <h3>Welcome to nitish@webgentle.com</h3>
+    <h2>welcome to @@webgentle.com</h2>
+    <img src="~/images/logo1.png" alt="logo1" />
+    <img src="~/MyStaticFiles/dummy.jpg" alt="dummy img"/>
+</body>
+</html>
