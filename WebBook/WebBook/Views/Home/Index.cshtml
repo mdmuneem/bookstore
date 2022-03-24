@@ -5,9 +5,9 @@
 }
 <html>
 <head>
-
+    <link href="~/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 </head>
-<body>
+<body class="container">
     <h1>welcome to home page</h1>
     <h2>@DateTime.Now</h2>
     <h3>@DateTime.Now.ToString("dd-M-yy")</h3>
@@ -61,6 +61,15 @@
     <h3>Welcome to nitish@webgentle.com</h3>
     <h2>welcome to @@webgentle.com</h2>
     <img src="~/images/logo1.png" alt="logo1" />
-    <img src="~/MyStaticFiles/dummy.jpg" alt="dummy img"/>
+    @*<img src="~/MyStaticFiles/dummy.jpg" alt="dummy img"/>*@
+    <button class="btn btn-danger">Click me bs</button>
 </body>
+
+<script src="~/jquery/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+    alert("PAge Loaded");
+      
+    });
+</script>
 </html>
